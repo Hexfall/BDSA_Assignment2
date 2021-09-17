@@ -2,10 +2,11 @@ using System;
 
 namespace Assignment02
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args) {
-            Console.WriteLine("test");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
         }
     }
 }
