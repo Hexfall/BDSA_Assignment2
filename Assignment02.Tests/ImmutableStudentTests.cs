@@ -75,7 +75,7 @@ namespace Assignment02.Tests
             string s = IS1.ToString();
 
             //Assert
-            Assert.Equal($"ImmutableStudent { Id = 42, GivenName = First, SurName = Second, Status = New, StartDate = {startDate}, EndDate = , GraduationDate =  }", s);
+            Assert.Equal($"ImmutableStudent {{ Id = 42, GivenName = First, SurName = Second, Status = New, StartDate = {startDate}, EndDate = , GraduationDate =  }}", s);
         }
     }
 }
