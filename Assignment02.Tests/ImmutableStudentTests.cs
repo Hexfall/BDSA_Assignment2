@@ -62,18 +62,20 @@ namespace Assignment02.Tests
         public void ImmutableStudent_ToString_With_Null_Variables()
         {
             //Arrange
+            var startDate = new DateTime(2021, 9, 17); // 17th september 2021
+            
             ImmutableStudent IS1 = new ImmutableStudent {
                 Id = 42,
                 GivenName = "First",
                 SurName = "Second",
-                StartDate = new DateTime(2021, 9, 17) // 17th september 2021
+                StartDate = startDate
             };
             
             //Act
             string s = IS1.ToString();
 
             //Assert
-            Assert.Equal("ImmutableStudent { Id = 42, GivenName = First, SurName = Second, Status = New, StartDate = 9/17/2021 12:00:00 AM, EndDate = , GraduationDate =  }", s);
+            Assert.Equal($"ImmutableStudent { Id = 42, GivenName = First, SurName = Second, Status = New, StartDate = {startDate}, EndDate = , GraduationDate =  }", s);
         }
     }
 }
